@@ -1,10 +1,7 @@
-/** @jsxRuntime classic */
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import AppRouter from './router';
 
-function App() {
-    return <h1>React funcionando</h1>;
-}
-
+// Punto de entrada — solo monta el router en el div#app del blade
 const root = createRoot(document.getElementById('app'));
-root.render(<App />);
+root.render(<AppRouter />);
